@@ -44,11 +44,78 @@ body
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
+	background-image: url("../img/fog2Bg.jpg")
+	background-size: cover
+	padding: 50px
+
+p
+	font-family: $poppins-regular
+	color: #ffffff
+	margin: 0
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+.fill
+	height: 100%
+	min-height: 100%
+
+.change-location
+	background-color: transparent
+	outline: none
+	border: 0
+
+.weather-icon
+	width: 80px
+	height: 80px
+	margin-bottom: 15px
+
+.weather-status
+	font-family: $poppins-bold
+	font-size: 28px
+	line-height: 28px
+
+.weather-city
+	font-size: 18px
+
+.weather-temperature
+	margin-top: 30px
+	margin-bottom: 10px
+	font-size: 80px
+	line-height: 80px
+	font-family: $degrees-font
+
+.change-location
+	margin: 0
+	padding: 0
+	color: #ffffff
+	font-family: $poppins-bold
+	&::before
+		position: relative
+		content: ""
+		display: block
+		width: 20px
+		height: 20px
+		background-size: cover
+		background-image: url("../img/location.svg")
+		top: 22.5px
+		left: -27px
+
+.info-icon
+	width: 35px
+	height: 35px
+
+.weather-info
+	margin: 20px 0
+
+.info-title
+	font-size: 16px
+
+.info-data
+	font-size: 26px
+	font-family: $poppins-bold
 
 .text-center
 	text-align: center
